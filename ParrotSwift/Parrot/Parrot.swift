@@ -28,10 +28,7 @@ public class Parrot {
 	
 	public func getSpeed() -> Double {
 		switch(type) {
-		case .EUROPEAN:
-			return getBaseSpeed()
-		//case .AFRICAN:
-		//return max(0, getBaseSpeed() - getLoadFactor() * Double(numberOfCoconuts))
+
 		case .NORWEGIAN_BLUE:
 			return (isNailed) ? 0 : getBaseSpeed(voltage)
 			

@@ -15,6 +15,6 @@ public class EuropeanParrot: Parrot {
 	}
 	
 	public override func getSpeed() -> Double {
-		return super.getSpeed()
+		return getBaseSpeed()
 	}
 }
