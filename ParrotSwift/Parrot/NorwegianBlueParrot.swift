@@ -11,6 +11,8 @@ import Foundation
 public class NorwegianBlueParrot : Parrot {
 	private let voltage: Double
 	private let isNailed: Bool
+	
+	static let maxSpeed = 24.0
 
 	public init(voltage: Double, isNailed: Bool) {
 		self.voltage = voltage
@@ -18,10 +20,10 @@ public class NorwegianBlueParrot : Parrot {
 	}
 	
 	override public func speed() -> Double {
-		return (isNailed) ? Parrot.stoppedSpeed : voltageSpeed()
+		return isNailed ? Parrot.stoppedSpeed : voltageSpeed()
 	}
 	
 	private func voltageSpeed() -> Double {
-		return min(24.0, voltage*Parrot.baseSpeed)
+		return min(NorwegianBlueParrot.maxSpeed, voltage*Parrot.baseSpeed)
 	}
 }
