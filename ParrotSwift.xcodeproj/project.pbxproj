@@ -17,6 +17,8 @@
 		A7B7AEA81D3815090000F2EF /* Parrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AEA71D3815090000F2EF /* Parrot.swift */; };
 		A7B7AEAB1D381A2F0000F2EF /* ParrotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AEAA1D381A2F0000F2EF /* ParrotTests.swift */; };
 		A7F8811B1D39523700E8C30E /* EuropeanParrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */; };
+		A7F8811D1D3954AA00E8C30E /* AfricanParrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8811C1D3954AA00E8C30E /* AfricanParrot.swift */; };
+		A7F8811F1D39567000E8C30E /* NorwegianBlueParrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8811E1D39567000E8C30E /* NorwegianBlueParrot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		A7B7AEA71D3815090000F2EF /* Parrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parrot.swift; path = Parrot/Parrot.swift; sourceTree = "<group>"; };
 		A7B7AEAA1D381A2F0000F2EF /* ParrotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParrotTests.swift; path = Parrot/ParrotTests.swift; sourceTree = "<group>"; };
 		A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EuropeanParrot.swift; path = Parrot/EuropeanParrot.swift; sourceTree = "<group>"; };
+		A7F8811C1D3954AA00E8C30E /* AfricanParrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AfricanParrot.swift; path = Parrot/AfricanParrot.swift; sourceTree = "<group>"; };
+		A7F8811E1D39567000E8C30E /* NorwegianBlueParrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NorwegianBlueParrot.swift; path = ParrotSwift/Parrot/NorwegianBlueParrot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		A7B7AE781D38148E0000F2EF = {
 			isa = PBXGroup;
 			children = (
+				A7F8811E1D39567000E8C30E /* NorwegianBlueParrot.swift */,
 				A7B7AE831D38148E0000F2EF /* ParrotSwift */,
 				A7B7AE981D38148F0000F2EF /* ParrotSwiftTests */,
 				A7B7AE821D38148E0000F2EF /* Products */,
@@ -112,6 +117,7 @@
 				A7B7AEA51D3814BD0000F2EF /* ParrotTypeEnum.swift */,
 				A7B7AEA71D3815090000F2EF /* Parrot.swift */,
 				A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */,
+				A7F8811C1D3954AA00E8C30E /* AfricanParrot.swift */,
 			);
 			name = Parrot;
 			sourceTree = "<group>";
@@ -227,8 +233,10 @@
 			files = (
 				A7B7AE871D38148E0000F2EF /* ViewController.swift in Sources */,
 				A7B7AE851D38148E0000F2EF /* AppDelegate.swift in Sources */,
+				A7F8811F1D39567000E8C30E /* NorwegianBlueParrot.swift in Sources */,
 				A7B7AEA61D3814BD0000F2EF /* ParrotTypeEnum.swift in Sources */,
 				A7B7AEA81D3815090000F2EF /* Parrot.swift in Sources */,
+				A7F8811D1D3954AA00E8C30E /* AfricanParrot.swift in Sources */,
 				A7F8811B1D39523700E8C30E /* EuropeanParrot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
