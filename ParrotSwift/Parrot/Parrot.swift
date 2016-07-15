@@ -14,17 +14,9 @@ enum Exception: ErrorType {
 
 public class Parrot {
 	
-	private let type: ParrotTypeEnum
-
-	public init(_type: ParrotTypeEnum, numberOfCoconuts: Int = 0, voltage: Double, isNailed: Bool) {
-		self.type = _type
-	}
+	static let baseSpeed = 12.0
 	
 	public func getSpeed() -> Double {
 		fatalError("Should be unreachable")
-	}
-	
-	internal func getBaseSpeed() -> Double {
-		return 12.0
 	}
 }

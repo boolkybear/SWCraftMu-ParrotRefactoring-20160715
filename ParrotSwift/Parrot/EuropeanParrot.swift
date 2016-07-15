@@ -10,11 +10,7 @@ import Foundation
 
 public class EuropeanParrot: Parrot {
 	
-	init() {
-		super.init(_type: ParrotTypeEnum.EUROPEAN, numberOfCoconuts: 0, voltage: 0, isNailed: false)
-	}
-	
 	public override func getSpeed() -> Double {
-		return getBaseSpeed()
+		return Parrot.baseSpeed
 	}
 }

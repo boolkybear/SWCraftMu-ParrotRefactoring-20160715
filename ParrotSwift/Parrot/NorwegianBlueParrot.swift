@@ -15,8 +15,6 @@ public class NorwegianBlueParrot : Parrot {
 	public init(voltage: Double, isNailed: Bool) {
 		self.voltage = voltage
 		self.isNailed = isNailed
-
-		super.init(_type: ParrotTypeEnum.NORWEGIAN_BLUE, numberOfCoconuts: 0, voltage: voltage, isNailed: isNailed)
 	}
 	
 	override public func getSpeed() -> Double {
@@ -24,6 +22,6 @@ public class NorwegianBlueParrot : Parrot {
 	}
 	
 	private func getBaseSpeed(voltage: Double) -> Double {
-		return min(24.0, voltage*getBaseSpeed())
+		return min(24.0, voltage*Parrot.baseSpeed)
 	}
 }

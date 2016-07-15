@@ -13,12 +13,10 @@ public class AfricanParrot: Parrot {
 	
 	public init(numberOfCoconuts: Int = 0) {
 		self.numberOfCoconuts = numberOfCoconuts
-		
-		super.init(_type: ParrotTypeEnum.AFRICAN, numberOfCoconuts: numberOfCoconuts, voltage: 0, isNailed: false)
 	}
 	
 	override public func getSpeed() -> Double {
-		return max(0, getBaseSpeed() - getLoadFactor() * Double(numberOfCoconuts))
+		return max(0, Parrot.baseSpeed - getLoadFactor() * Double(numberOfCoconuts))
 	}
 	
 	private func getLoadFactor() -> Double {
