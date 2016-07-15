@@ -18,10 +18,10 @@ public class NorwegianBlueParrot : Parrot {
 	}
 	
 	override public func getSpeed() -> Double {
-		return (isNailed) ? 0 : getBaseSpeed(voltage)
+		return (isNailed) ? 0 : getVoltageSpeed()
 	}
 	
-	private func getBaseSpeed(voltage: Double) -> Double {
+	private func getVoltageSpeed() -> Double {
 		return min(24.0, voltage*Parrot.baseSpeed)
 	}
 }
