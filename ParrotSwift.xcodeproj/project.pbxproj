@@ -13,7 +13,6 @@
 		A7B7AE8C1D38148F0000F2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B7AE8B1D38148F0000F2EF /* Assets.xcassets */; };
 		A7B7AE8F1D38148F0000F2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B7AE8D1D38148F0000F2EF /* LaunchScreen.storyboard */; };
 		A7B7AE9A1D38148F0000F2EF /* ParrotSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AE991D38148F0000F2EF /* ParrotSwiftTests.swift */; };
-		A7B7AEA61D3814BD0000F2EF /* ParrotTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AEA51D3814BD0000F2EF /* ParrotTypeEnum.swift */; };
 		A7B7AEA81D3815090000F2EF /* Parrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AEA71D3815090000F2EF /* Parrot.swift */; };
 		A7B7AEAB1D381A2F0000F2EF /* ParrotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7AEAA1D381A2F0000F2EF /* ParrotTests.swift */; };
 		A7F8811B1D39523700E8C30E /* EuropeanParrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */; };
@@ -42,7 +41,6 @@
 		A7B7AE951D38148F0000F2EF /* ParrotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParrotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B7AE991D38148F0000F2EF /* ParrotSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrotSwiftTests.swift; sourceTree = "<group>"; };
 		A7B7AE9B1D38148F0000F2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7B7AEA51D3814BD0000F2EF /* ParrotTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParrotTypeEnum.swift; path = Parrot/ParrotTypeEnum.swift; sourceTree = "<group>"; };
 		A7B7AEA71D3815090000F2EF /* Parrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parrot.swift; path = Parrot/Parrot.swift; sourceTree = "<group>"; };
 		A7B7AEAA1D381A2F0000F2EF /* ParrotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParrotTests.swift; path = Parrot/ParrotTests.swift; sourceTree = "<group>"; };
 		A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EuropeanParrot.swift; path = Parrot/EuropeanParrot.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 		A7B7AEA41D38149A0000F2EF /* Parrot */ = {
 			isa = PBXGroup;
 			children = (
-				A7B7AEA51D3814BD0000F2EF /* ParrotTypeEnum.swift */,
 				A7B7AEA71D3815090000F2EF /* Parrot.swift */,
 				A7F8811A1D39523700E8C30E /* EuropeanParrot.swift */,
 				A7F8811C1D3954AA00E8C30E /* AfricanParrot.swift */,
@@ -234,7 +231,6 @@
 				A7B7AE871D38148E0000F2EF /* ViewController.swift in Sources */,
 				A7B7AE851D38148E0000F2EF /* AppDelegate.swift in Sources */,
 				A7F8811F1D39567000E8C30E /* NorwegianBlueParrot.swift in Sources */,
-				A7B7AEA61D3814BD0000F2EF /* ParrotTypeEnum.swift in Sources */,
 				A7B7AEA81D3815090000F2EF /* Parrot.swift in Sources */,
 				A7F8811D1D3954AA00E8C30E /* AfricanParrot.swift in Sources */,
 				A7F8811B1D39523700E8C30E /* EuropeanParrot.swift in Sources */,
