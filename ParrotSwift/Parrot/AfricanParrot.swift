@@ -19,6 +19,10 @@ public class AfricanParrot: Parrot {
 	}
 	
 	override public func getSpeed() -> Double {
-		return max(Parrot.stoppedSpeed, Parrot.baseSpeed - AfricanParrot.loadFactor * Double(numberOfCoconuts))
+		return max(Parrot.stoppedSpeed, Parrot.baseSpeed - penaltySpeed())
+	}
+	
+	private func penaltySpeed() -> Double {
+		return AfricanParrot.loadFactor * Double(numberOfCoconuts)
 	}
 }
