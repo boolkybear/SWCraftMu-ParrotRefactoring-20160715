@@ -18,7 +18,7 @@ public class NorwegianBlueParrot : Parrot {
 	}
 	
 	override public func getSpeed() -> Double {
-		return (isNailed) ? 0 : getVoltageSpeed()
+		return (isNailed) ? Parrot.stoppedSpeed : getVoltageSpeed()
 	}
 	
 	private func getVoltageSpeed() -> Double {

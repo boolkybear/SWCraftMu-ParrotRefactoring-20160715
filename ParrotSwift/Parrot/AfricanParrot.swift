@@ -9,6 +9,9 @@
 import Foundation
 
 public class AfricanParrot: Parrot {
+	
+	private static let loadFactor = 9.0
+	
 	private let numberOfCoconuts: Int
 	
 	public init(numberOfCoconuts: Int = 0) {
@@ -16,10 +19,6 @@ public class AfricanParrot: Parrot {
 	}
 	
 	override public func getSpeed() -> Double {
-		return max(0, Parrot.baseSpeed - getLoadFactor() * Double(numberOfCoconuts))
-	}
-	
-	private func getLoadFactor() -> Double {
-		return 9.0
+		return max(Parrot.stoppedSpeed, Parrot.baseSpeed - AfricanParrot.loadFactor * Double(numberOfCoconuts))
 	}
 }

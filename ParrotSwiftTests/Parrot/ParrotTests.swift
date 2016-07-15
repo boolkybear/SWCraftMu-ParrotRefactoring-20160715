@@ -10,48 +10,38 @@ import XCTest
 @testable import ParrotSwift
 
 class ParrotTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-	func testGetSpeedOfEuropeanParrot() {
+	
+	func testSpeedOfEuropeanParrotIsBaseSpeed() {
 		let parrot = EuropeanParrot()
-		XCTAssert(parrot.getSpeed() == 12.0)
+		XCTAssert(parrot.getSpeed() == Parrot.baseSpeed)
 	}
 
-	func testGetSpeedOfAfricanParrot_With_One_Coconut() {
+	func testSpeedOfAfricanParrotWithOneCoconutIsSlow() {
 		let parrot = AfricanParrot(numberOfCoconuts: 1)
 		XCTAssert(parrot.getSpeed() == 3.0)
 	}
 	
-	func testGetSpeedOfAfricanParrot_With_Two_Coconuts() {
+	func testAfricanParrotWithTwoCoconutsCantFly() {
 		let parrot = AfricanParrot(numberOfCoconuts: 2)
-		XCTAssert(parrot.getSpeed() == 0.0)
+		XCTAssert(parrot.getSpeed() == Parrot.stoppedSpeed)
 	}
 	
-	func testGetSpeedOfAfricanParrot_With_No_Coconuts() {
+	func testSpeedOfAfricanParrotWithNoCoconutsIsBaseSpeed() {
 		let parrot = AfricanParrot()
-		XCTAssert(parrot.getSpeed() == 12.0)
+		XCTAssert(parrot.getSpeed() == Parrot.baseSpeed)
 	}
 	
-	func testGetSpeedNorwegianBlueParrot_nailed() {
+	func testNorwegianBlueParrotWhenNailedCantFly() {
 		let parrot = NorwegianBlueParrot(voltage: 0, isNailed: true)
-		XCTAssert(parrot.getSpeed() == 0.0)
+		XCTAssert(parrot.getSpeed() == Parrot.stoppedSpeed)
 	}
 	
-	func testGetSpeedNorwegianBlueParrot_not_nailed() {
+	func testSpeedNorwegianBlueParrotNotNailedIsFasterWithGreaterThanOneVoltage() {
 		let parrot = NorwegianBlueParrot(voltage: 1.5, isNailed: false)
 		XCTAssert(parrot.getSpeed() == 18.0)
 	}
 	
-	func testGetSpeedNorwegianBlueParrot_not_nailed_high_voltage() {
+	func testSpeedNorwegianBlueParrotNotNailedIsProportionalToVoltage() {
 		let parrot = NorwegianBlueParrot(voltage: 4, isNailed: false);
 		XCTAssert(parrot.getSpeed() == 24.0)
 	}

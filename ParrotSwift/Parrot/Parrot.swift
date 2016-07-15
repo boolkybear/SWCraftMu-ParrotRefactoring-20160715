@@ -14,6 +14,7 @@ enum Exception: ErrorType {
 
 public class Parrot {
 	
+	static let stoppedSpeed = 0.0
 	static let baseSpeed = 12.0
 	
 	public func getSpeed() -> Double {
