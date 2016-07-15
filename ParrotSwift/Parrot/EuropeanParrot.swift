@@ -10,7 +10,7 @@ import Foundation
 
 public class EuropeanParrot: Parrot {
 	
-	public override func getSpeed() -> Double {
+	public override func speed() -> Double {
 		return Parrot.baseSpeed
 	}
 }

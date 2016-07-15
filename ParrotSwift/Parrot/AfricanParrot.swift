@@ -18,7 +18,7 @@ public class AfricanParrot: Parrot {
 		self.numberOfCoconuts = numberOfCoconuts
 	}
 	
-	override public func getSpeed() -> Double {
+	override public func speed() -> Double {
 		return max(Parrot.stoppedSpeed, Parrot.baseSpeed - penaltySpeed())
 	}
 	

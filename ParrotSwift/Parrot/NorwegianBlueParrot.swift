@@ -17,11 +17,11 @@ public class NorwegianBlueParrot : Parrot {
 		self.isNailed = isNailed
 	}
 	
-	override public func getSpeed() -> Double {
-		return (isNailed) ? Parrot.stoppedSpeed : getVoltageSpeed()
+	override public func speed() -> Double {
+		return (isNailed) ? Parrot.stoppedSpeed : voltageSpeed()
 	}
 	
-	private func getVoltageSpeed() -> Double {
+	private func voltageSpeed() -> Double {
 		return min(24.0, voltage*Parrot.baseSpeed)
 	}
 }
