@@ -15,37 +15,16 @@ enum Exception: ErrorType {
 public class Parrot {
 	
 	private let type: ParrotTypeEnum
-	
-	private let voltage: Double
-	private let isNailed: Bool
-	
-	
+
 	public init(_type: ParrotTypeEnum, numberOfCoconuts: Int = 0, voltage: Double, isNailed: Bool) {
 		self.type = _type
-		self.voltage = voltage
-		self.isNailed = isNailed
 	}
 	
 	public func getSpeed() -> Double {
-		switch(type) {
-
-		case .NORWEGIAN_BLUE:
-			return (isNailed) ? 0 : getBaseSpeed(voltage)
-			
-		default:
-			fatalError("Should be unreachable")
-		}
-	
-		//throw Exception.Runtime(error: "Should be unreachable")
-	}
-	
-	private func getBaseSpeed(voltage: Double) -> Double {
-		return min(24.0, voltage*getBaseSpeed())
+		fatalError("Should be unreachable")
 	}
 	
 	internal func getBaseSpeed() -> Double {
 		return 12.0
 	}
-	
-	
 }
