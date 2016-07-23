@@ -8,10 +8,6 @@
 
 import Foundation
 
-enum Exception: ErrorType {
-	case Runtime(error: String)
-}
-
 public class Parrot {
 	
 	static let stoppedSpeed = 0.0
